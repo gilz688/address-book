@@ -153,15 +153,16 @@ public class AddressBookTableModel extends AbstractTableModel{
 		@return row containing the specified text, <b>-1</b> if no match if found
 	 */		
     public int findNext(int startRow, String text){
+    	text = text.trim().toLowerCase();
     	ListIterator<Person> iterator = addressBook.getPersons().listIterator(startRow);
     	while(iterator.hasNext()){
     		int index = iterator.nextIndex();
     		Person current = iterator.next();
-    		if(current.getFullName().indexOf(text) != -1)
+    		if(current.getFullName().toLowerCase().indexOf(text) != -1)
     			return index;
-    		if(current.getCityAddress().indexOf(text) != -1)
+    		if(current.getCityAddress().toLowerCase().indexOf(text) != -1)
     			return index;
-    		if(String.valueOf(current.getZipCode()).indexOf(text) != -1)
+    		if(String.valueOf(current.getZipCode()).toLowerCase().indexOf(text) != -1)
     			return index;
     	}
     	return -1;
