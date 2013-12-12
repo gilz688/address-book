@@ -243,22 +243,15 @@ public class PersonDialog extends JDialog implements ActionListener{
 		Sex sex = (Sex) cbSex.getSelectedItem();
 		person.setSex(sex);
 		
-		person.setTitle(tfTitle.getText());
-		person.setFirstName(tfFirstName.getText());
-		person.setMiddleName(tfMiddleName.getText());
-		person.setLastName(tfLastName.getText());
-		person.setAddress(tfAddress.getText());
-		person.setCity(tfCity.getText());
-		person.setState(tfState.getText());
-		person.setContactNumber(tfContactNumber.getText());
-		
-		try{
-			int zipCode = Integer.parseInt(tfZipCode.getText());
-			person.setZipCode(zipCode);
-		} catch (NumberFormatException e){
-			
-		}
-		
+		person.setTitle(tfTitle.getText().trim());
+		person.setFirstName(tfFirstName.getText().trim());
+		person.setMiddleName(tfMiddleName.getText().trim());
+		person.setLastName(tfLastName.getText().trim());
+		person.setAddress(tfAddress.getText().trim());
+		person.setCity(tfCity.getText().trim());
+		person.setState(tfState.getText().trim());
+		person.setContactNumber(tfContactNumber.getText().trim());
+		person.setZipCode(tfZipCode.getText().trim());
 		String country = null;
 		if(cbCountry.getSelectedIndex() != 0)
 			country = (String) cbCountry.getSelectedItem();
@@ -279,11 +272,7 @@ public class PersonDialog extends JDialog implements ActionListener{
 		tfCity.setText(person.getCity());
 		tfState.setText(person.getState());
 		tfContactNumber.setText(person.getContactNumber());
-		
-		int zipCode = person.getZipCode();
-		if(zipCode != 0)
-			tfZipCode.setText(String.valueOf(person.getZipCode()));
-		
+		tfZipCode.setText(person.getZipCode());
 		cbCountry.setSelectedItem(person.getCountry());
 	}
 }

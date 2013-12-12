@@ -7,7 +7,7 @@ import java.util.Comparator;
  */
 public class ZipCodeComparator implements Comparator<Person> {
 	public int compare(Person personA, Person personB) {
-		int comparison = personA.getZipCode() - personB.getZipCode();
+		int comparison = personA.getZipCode().compareTo(personB.getZipCode());
 		if (comparison == 0)
 			comparison = personA.compareTo(personB);
 		return comparison;

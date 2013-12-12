@@ -57,10 +57,7 @@ public class AddressBookTableModel extends AbstractTableModel{
 		case COLUMN_ADDRESS:
 			return person.getCityAddress();
 		case COLUMN_ZIPCODE:
-			int zipCode = person.getZipCode();
-			if(zipCode == 0)
-				return "";
-			return String.valueOf(zipCode);
+			return person.getZipCode();
 		case COLUMN_CONTACTNUMBER:
 			return person.getContactNumber();
 			default:

@@ -20,7 +20,7 @@ public class Person implements Comparable<Person>{
 	@Element(required=false)
 	private Sex sex;
 	@Element(required=false)
-	private int zipCode;
+	private String zipCode;
 	@Element(required=false)
 	private String contactNumber;
 	@Element(required=false)
@@ -105,14 +105,14 @@ public class Person implements Comparable<Person>{
 		this.sex = sex;
 	}
 	
-	public int getZipCode() {
+	public String getZipCode() {
 		return zipCode;
 	}
 
 	/**	
 		Set the zip code or postal code of the Person
 	*/	
-	public void setZipCode(int zipCode) {
+	public void setZipCode(String zipCode) {
 		this.zipCode = zipCode;
 	}
 	
