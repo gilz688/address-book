@@ -83,7 +83,7 @@ public class AddressBook {
 	}
 
 	/**
-	    Sort Persons in the AddressBookModel
+	    Sort Persons in the Address Book
 	 */	
 	public void sort(SortingOrder order){
 		switch(order){
@@ -105,7 +105,7 @@ public class AddressBook {
 	}
 
 	/**
-    	Replace Person at specified index in the AddressBookModel
+    	Replace Person at specified index in the Address Book
     	@param person new Person
     	@return Person replaced
 	*/	

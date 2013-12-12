@@ -3,7 +3,7 @@ package tk.gilz688.AddressBook;
 import java.util.Comparator;
 
 /**
- * Find all Persons in the Address Book Model that contains the specified text
+    Sort persons by Zip Code, and by Name if Zip Code is the same
  */
 public class ZipCodeComparator implements Comparator<Person> {
 	public int compare(Person personA, Person personB) {

@@ -242,7 +242,6 @@ public class PersonDialog extends JDialog implements ActionListener{
 	public void updateContact(){
 		Sex sex = (Sex) cbSex.getSelectedItem();
 		person.setSex(sex);
-		
 		person.setTitle(tfTitle.getText().trim());
 		person.setFirstName(tfFirstName.getText().trim());
 		person.setMiddleName(tfMiddleName.getText().trim());
@@ -263,7 +262,6 @@ public class PersonDialog extends JDialog implements ActionListener{
 	*/
 	public void updateDialog(){
 		cbSex.setSelectedItem(person.getSex());
-		
 		tfTitle.setText(person.getTitle());
 		tfFirstName.setText(person.getFirstName());
 		tfMiddleName.setText(person.getMiddleName());

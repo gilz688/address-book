@@ -61,16 +61,15 @@ public class AddressBookApp {
 	 */
 	public static void main(String[] args) {
 		try {
-			// Set System L&F
 			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 		} catch (UnsupportedLookAndFeelException e) {
-			// handle exception
+
 		} catch (ClassNotFoundException e) {
-			// handle exception
+
 		} catch (InstantiationException e) {
-			// handle exception
+
 		} catch (IllegalAccessException e) {
-			// handle exception
+
 		}
 
 		EventQueue.invokeLater(new Runnable() {
@@ -101,7 +100,6 @@ public class AddressBookApp {
 		frame.setTitle(APP_NAME);
 		frame.setBounds(100, 100, 550, 475);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
 		scrollPane = new JScrollPane();
 		scrollPane
 				.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);

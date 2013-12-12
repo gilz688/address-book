@@ -23,14 +23,14 @@ public class AddressBookTableModel extends AbstractTableModel{
 	private static final String HEADER_CONTACTNUMBER = "Contact Number";
 	
 	/**
-	 *  Create an AddressBookModel using data from an existing AddressBook
+	    Create an AddressBookModel using data from an existing AddressBook
 	 */
 	public AddressBookTableModel(AddressBook aAddressBook){
 		addressBook = aAddressBook;
 	}
 	
 	/**
-	 *  Create an empty AddressBookModel
+	    Create an empty AddressBookModel
 	 */
 	public AddressBookTableModel(){
 		addressBook = new AddressBook();
@@ -66,9 +66,9 @@ public class AddressBookTableModel extends AbstractTableModel{
 	}
 
 	/**
-	 *  Remove Person with specified index from AddressBookModel
-	 *  @param index index of Person to be removed
-	 *  @return removed Person
+	    Remove Person with specified index from AddressBookModel
+	    @param index index of Person to be removed
+	    @return removed Person
 	 */
 	public Person remove(int index) {
 		Person removedPerson =  addressBook.remove(index);
@@ -77,8 +77,8 @@ public class AddressBookTableModel extends AbstractTableModel{
 	}
 
 	/**
-	 *  Add Person to AddressBookModel
-	 *  @param person Person to be added
+	    Add Person to AddressBookModel
+	    @param person Person to be added
 	 */
 	public boolean addElement(Person person) {
 		boolean result = addressBook.add(person);
@@ -87,9 +87,9 @@ public class AddressBookTableModel extends AbstractTableModel{
 	}
 
 	/**
-	 *  Set a new Person to the specified index of the AddressBookModel
-	 *  @param index index of the Person to be replaced
-	 *  @param person new Person
+	    Set a new Person to the specified index of the AddressBookModel
+	    @param index index of the Person to be replaced
+	    @param person new Person
 	 */
 	public Person set(int index, Person person) {
 		Person previousPerson = addressBook.set(index, person);
@@ -98,17 +98,17 @@ public class AddressBookTableModel extends AbstractTableModel{
 	}
 	
 	/**
-	 *  Return an AddressBook containing all persons in the AddressBookModel
-	 *  @return an AddressBook
+	    Return an AddressBook containing all persons in the AddressBookModel
+	    @return an AddressBook
 	 */
 	public AddressBook getAddressBook(){
 		return addressBook;
 	}
 	
 	/**
-	 *  Get Person at specified index in the AddressBookModel
-	 *  @param index index of the Person to be retrieved
-	 *  @return Person at specified index
+	    Get Person at specified index in the AddressBookModel
+	    @param index index of the Person to be retrieved
+	    @return Person at specified index
 	 */
 	public Person getPersonAt(int index){
 		return addressBook.get(index);
@@ -137,7 +137,7 @@ public class AddressBookTableModel extends AbstractTableModel{
 	}
 
 	/**
-	 *  Set sorting order of the AddressBookModel
+	    Set sorting order of the AddressBookModel
 	 */	
 	public void setSortingOrder(SortingOrder order){
 		sortingOrder = order;
