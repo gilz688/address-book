@@ -1,0 +1,24 @@
+November 28, 2013
+=================
+- Designed GUI for Main Window
+- Created partial AddressBook & Person class
+
+December 2, 2013
+=================
+- Class Diagram
+
+December 5, 2013
+=================
+- Designed GUI for Adding or Editing Entries
+- Completed AddressBook & Person
+
+December 8, 2013
+=================
+- Finalized GUI
+- Address Book XML Serialization
+
+December 12, 2013
+=================
+- Implemented Sorting, Find and Offer To Save use cases
+- Refactored code
+- Functionality testing
