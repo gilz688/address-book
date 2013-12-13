@@ -2,8 +2,8 @@ CSC 184 Deliverable 1 : Address Book
 ====================================
 
 Dependencies:
--Simple XML Serialization
--Swing
+- Simple XML Serialization
+- Swing
 
 Description:
 
